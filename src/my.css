@@ -1,3 +1,17 @@
+body {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
 .mockup-list li {
   list-style: none;
+  text-decoration: underline;
+  color: gray;
+}
+
+#eth-address {
+  color: gray;
 }

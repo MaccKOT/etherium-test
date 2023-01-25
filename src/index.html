@@ -8,22 +8,27 @@
       rel="stylesheet"
       href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rubik"
+    />
+
     <link rel="stylesheet" href="my.css" />
   </head>
   <title>Etherium testing project</title>
   <body>
-    <h1>Alchemy SDK</h1>
     <div class="container">
-      <h5>Список ETH-кошельков для примера:</h5>
+      <h1>Alchemy SDK</h1>
+      <h5>Список ETH-адресов для примера:</h5>
       <ul class="mockup-list"></ul>
-      <hr />
       <label
         >Введите ETH-адрес:
-        <input type="text" />
+        <input id="eth-address" type="text" />
       </label>
-      <button>Проверить баланс</button>
+      <button id="test-cash" type="button">Проверить баланс</button>
+      <p id="cash-output"></p>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
