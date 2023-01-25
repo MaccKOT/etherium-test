@@ -36,6 +36,10 @@ buttonBalance.addEventListener('click', () => {
   }
 
   function balanceOutput(res) {
+    if (process.env.NODE_ENV !== 'production') {
+      // some debug here
+      console.log(res);
+    }
     // c hex-числами ETH нельзя работать напрямую, потому что они за пределами возможностей языка Javascript, поэтому используется библиотека Ethers.js
     const cash = ethers.utils.formatEther(parseInt(res._hex).toString());
     cashOutput.innerHTML = `Баланс: ${cash} ETH.`;
